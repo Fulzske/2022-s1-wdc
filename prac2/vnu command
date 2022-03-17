@@ -1,0 +1,6 @@
+rm -f ~/.bashrc ~/.bash_profile ~/.profile ~/.eslintrc
+curl -Lo ~/.bash_profile https://github.com/ian-knight-uofa/uofa-tools/releases/download/22.03.03/bashrc
+curl -Lo ~/.eslintrc https://github.com/ian-knight-uofa/uofa-tools/releases/download/22.03.03/eslintrc
+
+echo $VNU_DIR
+mv ~/.bashrc ~/.bash_profile
