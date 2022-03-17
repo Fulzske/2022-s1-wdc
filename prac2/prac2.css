@@ -1,3 +1,8 @@
+body  {
+    background-image:url("cross.png");
+    background-color:#DCF5f5;
+}
+
 h1 {
     font-family: sans-serif;
 }
