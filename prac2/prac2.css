@@ -17,7 +17,7 @@ pre {
 
 .transparent-text {
     font-family: monospace;
-    color:black;opacity:0.5;
+    color:rgba(0,0,0,0.5);
 }
 
 a:link {
