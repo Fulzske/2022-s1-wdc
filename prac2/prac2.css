@@ -7,8 +7,17 @@ h2 {
     text-align:left;
 }
 
+h3 {
+    color:darkblue;opacity:0.8;
+}
+
 pre {
     font-family: monospace;
+}
+
+.transparent-text {
+    font-family: monospace;
+    color:black;opacity:0.5;
 }
 
 a:link {
