@@ -3,8 +3,21 @@ body  {
     background-color:#DCF5f5;
 }
 
+.content {
+    background-color:white;
+}
+
+.blue {
+    color:blue;
+}
+
+.fancy {
+    font-family: cursive;
+}
+
 h1 {
     font-family: sans-serif;
+    background-color:white;
 }
 
 h2 {
