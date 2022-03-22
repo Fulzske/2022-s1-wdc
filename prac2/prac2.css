@@ -3,14 +3,15 @@ body  {
     background-color:#DCF5f5;
 }
 
-hr {
-    background-color:#CFDFE4;
-}
-
-div {
+.content {
+    background-color:white;
     border-radius: 8px;
     border: 1px solid darkgrey;
     background-color:white;
+}
+
+hr {
+    background-color:#CFDFE4;
 }
 
 #divRed {
@@ -51,10 +52,6 @@ div {
 
 .red-outline{
     outline:1px solid red;
-}
-
-.content {
-    background-color:white;
 }
 
 .blue {
