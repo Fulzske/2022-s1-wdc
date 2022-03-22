@@ -17,11 +17,11 @@ body  {
 #divInner {
     background-color:yellow;
     border:1px solid red;
-    margin: 20px 20px 10px 10px;
+    margin: 10px 20px 10px 20px;
     padding: 12px;
     text-align: right;
-    width:746px;
-    height:146px;
+    width:634px;
+    height:154px;
 }
 
 #divOuter2 {
