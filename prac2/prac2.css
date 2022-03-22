@@ -30,16 +30,15 @@ hr {
 #divRed8x {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom: 0;
     border-style: solid;
+    border-bottom: hidden;
     border-color: red;
 }
 
 #divBlue8x {
     border-radius: 1px 1px 8px 8px;
-    border-style: solid;
+    border-style: outset;
     border-color: blue;
-    margin-bottom: -1px;
 }
 
 .red-border {
