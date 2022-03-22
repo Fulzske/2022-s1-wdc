@@ -46,9 +46,7 @@ div {
 }
 
 .red-outline{
-    outline:red;
-    border-style: solid;
-    border-color: red;
+    outline:1px solid red;
 }
 
 .content {
