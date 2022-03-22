@@ -16,7 +16,8 @@ body  {
 
 #divInner {
     background-color:yellow;
-    border: 1px solid red;
+    border: solid red;
+    border-width: 1px;
     margin: 10px 20px 10px 20px;
     padding: 12px;
     text-align: right;
