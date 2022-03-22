@@ -4,3 +4,5 @@ curl -Lo ~/.eslintrc https://github.com/ian-knight-uofa/uofa-tools/releases/down
 
 echo $VNU_DIR
 mv ~/.bashrc ~/.bash_profile
+
+export GITHUB_TOKEN=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

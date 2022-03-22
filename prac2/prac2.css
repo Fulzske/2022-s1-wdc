@@ -3,6 +3,54 @@ body  {
     background-color:#DCF5f5;
 }
 
+div {
+    border-radius: 8px;
+    border: 1px solid darkgrey;
+    background-color:white;
+}
+
+#divRed {
+    border-radius: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+#divBlue {
+    border-radius: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#divRed8x {
+    border-radius: 8px 8px 1px 1px;
+    margin-bottom: -1px;
+    border-style: solid;
+    border-color: red;
+}
+
+#divBlue8x {
+    border-radius: 1px 1px 8px 8px;
+    border-style: solid;
+    border-color: blue;
+    margin-bottom: -1px;
+}
+
+.red-border {
+    border-style: solid;
+    border-color: red;
+}
+
+.blue-border {
+    border-style: solid;
+    border-color: blue;
+}
+
+.red-outline{
+    outline:red;
+    border-style: solid;
+    border-color: red;
+}
+
 .content {
     background-color:white;
 }
