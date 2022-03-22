@@ -3,10 +3,10 @@ body  {
     background-color:#DCF5f5;
 }
 
-.content {
+#content {
     background-color:white;
     border-radius: 8px;
-    border: 1px darkgrey;
+    border: 1px solid darkgrey;
 }
 
 hr {
