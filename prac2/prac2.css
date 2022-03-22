@@ -3,8 +3,15 @@ body  {
     background-color:#DCF5f5;
 }
 
+i {
+    color: #BFCFD4;
+    text-align: center;
+}
+
+
 #content {
     background-color:white;
+    font-family: "Noto Serif", serif;
     border-radius: 8px;
     border: 1px solid darkgrey;
 }
@@ -20,8 +27,8 @@ body  {
     margin: 10px 20px 10px 20px;
     padding: 12px;
     text-align: right;
-    width:590px;
-    height:115px;
+    width: 700px;
+    height:174px;
 }
 
 #divOuter2 {
@@ -94,12 +101,12 @@ hr {
 }
 
 h1 {
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color:white;
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     text-align:left;
 }
 
@@ -107,8 +114,19 @@ h3 {
     color:darkblue;opacity:0.8;
 }
 
+h4 {
+    font-family: Raleway;
+    font-style: italic;
+    text-decoration:underline;
+    font-weight: normal;
+}
+
 pre {
-    font-family: monospace;
+    font-family: Raleway;
+    color: dimgrey;
+    line-height: 1.5;
+    word-spacing: 0.2em;
+    text-align: justify;
 }
 
 .transparent-text {
@@ -130,5 +148,5 @@ mark {
 }
 
 p {
-    font-family: serif;
+    font-family: "Noto Serif", serif;
 }
