@@ -9,6 +9,36 @@ body  {
     border: 1px solid darkgrey;
 }
 
+#divOuter {
+    background-color:blue;
+    border:1px solid red;
+}
+
+#divInner {
+    background-color:yellow;
+    border:1px solid red;
+    margin: 20px 20px 10px 10px;
+    padding: 12px;
+    text-align: right;
+}
+
+#divOuter2 {
+    background-color:blue;
+    border:1px solid red;
+    margin-top: 20px;
+}
+
+#divInner2 {
+    background-color:yellow;
+    border:1px solid red;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 12px;
+    height: 400px;
+    text-align: right;
+}
+
 hr {
     color:#CFDFE4;
     border-color:#CFDFE4;
