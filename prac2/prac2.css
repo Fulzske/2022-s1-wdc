@@ -16,12 +16,12 @@ body  {
 
 #divInner {
     background-color:yellow;
-    border:1px solid red;
+    border: solid red;
     margin: 10px 20px 10px 20px;
     padding: 12px;
     text-align: right;
-    width:766px;
-    height:246px;
+    width:636px;
+    height:156px;
 }
 
 #divOuter2 {
@@ -31,14 +31,12 @@ body  {
 }
 
 #divInner2 {
-    background-color:yellow;
-    border:1px solid red;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 12px;
-    height: 400px;
+    border: solid red;
+    background-color: yellow;
     text-align: right;
+    height: 376px;
+    width: 376px;
+    margin: auto;
 }
 
 hr {
