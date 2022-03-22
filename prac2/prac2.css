@@ -28,8 +28,9 @@ hr {
 }
 
 #divRed8x {
-    border-radius: 8px 8px 1px 1px;
-    margin-bottom: -1px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 0;
     border-style: solid;
     border-color: red;
 }
