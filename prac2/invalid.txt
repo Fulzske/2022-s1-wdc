@@ -1,1 +1,1 @@
-vnu --also-check-css validate.css validatethis1.html validatethis2.html
+vnu --also-check-css validatethis1.html validatethis2.html validate.css
