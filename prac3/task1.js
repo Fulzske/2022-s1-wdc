@@ -1,4 +1,5 @@
-var today = new Date();
-var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-var dateTime = date+' '+time;
+const d = new Date();
+
+function myFunction() {
+    document.getElementById("current_time").innerHTML = d;
+}
