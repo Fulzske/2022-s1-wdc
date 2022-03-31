@@ -8,18 +8,18 @@ function mouseIn() {
 function postTime() {
 
     var date = new Date();
+    var posts = document.getElementById("posts");
     var para = document.createElement("div");
     var br = document.createElement("br");
     para.innerHTML = date;
-    document.getElementById("posts").appendChild(para);
-    document.getElementById("posts").appendChild(br);
+    posts.appendChild(para);
+    posts.appendChild(br);
     para.classList.add("post-time");
 
     var x = document.getElementById("textarea").value;
     var para1 = document.createElement("div");
     para1.innerHTML = x;
-    document.getElementById("posts").appendChild(br);
-    document.getElementById("posts").appendChild(para1);
+    posts.appendChild(para1);
     para.classList.add("post-content");
 }
 
