@@ -10,12 +10,12 @@ function postTime() {
     var element = document.getElementById("posts");
 
     var date = new Date();
-    var p1 = document.createElement("p");
+    var p1 = document.createElement("div");
     var node1 = document.createTextNode(date);
     p1.appendChild(node1)
     element.appendChild(p1)
 
-    var p2 = document.createElement("p");
+    var p2 = document.createElement("div");
     var x = document.querySelector(".post-content").value;
     var node2 = document.createTextNode(x);
     p2.appendChild(node2)
