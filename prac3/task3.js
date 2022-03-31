@@ -18,6 +18,7 @@ function postTime() {
     var x = document.getElementById("textarea").value;
     var para1 = document.createElement("div");
     para1.innerHTML = x;
+    document.getElementById("posts").appendChild(br);
     document.getElementById("posts").appendChild(para1);
     para.classList.add("post-content");
 }
