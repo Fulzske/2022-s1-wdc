@@ -16,11 +16,6 @@ i {
     border: 1px solid darkgrey;
 }
 
-#divOuter {
-    background-color:blue;
-    border:1px solid red;
-}
-
 #divInner {
     background-color:yellow;
     border: 1px solid red;
