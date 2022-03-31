@@ -14,7 +14,6 @@ function postTime() {
     para.innerHTML = date;
     posts.appendChild(para);
     posts.appendChild(br);
-    para.classList.add("post-time");
 
     var x = document.getElementById("textarea").value;
     var para1 = document.createElement("div");
