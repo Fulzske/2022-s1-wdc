@@ -1,10 +1,3 @@
-Content-Type: text/html; charset=ISO-8859-1
-Date: Sun, 03 Apr 2022 10:19:17 GMT
-Server: gws
-X-XSS-Protection: 0
-X-Frame-Options: SAMEORIGIN
-Transfer-Encoding: chunked
-Expires: Sun, 03 Apr 2022 10:19:17 GMT
-Cache-Control: private
-Set-Cookie: 1P_JAR=2022-04-03-10; expires=Tue, 03-May-2022 10:19:17 GMT; path=/; domain=.google.com; Secure
-Set-Cookie: AEC=AVQQ_LB54jSxPasTKvCQeJH_8ezDLt-U7HfH_FjcNawNk6722Pl2gBABN6c; expires=Fri, 30-Sep-2022 10:19:17 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+curl --request HEAD \
+  --url http://google.com/ \
+  --cookie NID=511%3Dp7g0OzLW6xG2mtldV6BAfjwQH8V6D9joQOOwGqhJQkvtSU1J_KPOmZdNtAxfjf-2OYXBl8XenAmr7CxHL_C7dQiVAvSUec40wZv2KdkTBMwgWGfC4JCt5XbSg6pu7VxgfyD_IkEOh9i1iBCL3kPxcpLNpIAcNiFETua1o63limw
