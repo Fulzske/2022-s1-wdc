@@ -1,3 +1,4 @@
 curl --request HEAD \
-  --url http://google.com/ \
-  --cookie NID=511%3Dp7g0OzLW6xG2mtldV6BAfjwQH8V6D9joQOOwGqhJQkvtSU1J_KPOmZdNtAxfjf-2OYXBl8XenAmr7CxHL_C7dQiVAvSUec40wZv2KdkTBMwgWGfC4JCt5XbSg6pu7VxgfyD_IkEOh9i1iBCL3kPxcpLNpIAcNiFETua1o63limw
+  --url https://google.com/ \
+  --cookie '1P_JAR=2022-04-03-10; NID=511%3Dp7g0OzLW6xG2mtldV6BAfjwQH8V6D9joQOOwGqhJQkvtSU1J_KPOmZdNtAxfjf-2OYXBl8XenAmr7CxHL_C7dQiVAvSUec40wZv2KdkTBMwgWGfC4JCt5XbSg6pu7VxgfyD_IkEOh9i1iBCL3kPxcpLNpIAcNiFETua1o63limw'
+  
