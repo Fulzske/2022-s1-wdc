@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-var date
+var date;
 router.get('/last.txt', function(req, res, next) {
   date = new Date();
   res.send(String(date));
