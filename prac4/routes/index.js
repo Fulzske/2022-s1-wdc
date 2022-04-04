@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-var time = " ";
+var time = "";
 router.get('/last.txt', function(req, res, next) {
-    res.setHeader('Content-Type', 'text/plain');
+    //res.setHeader('Content-Type', 'text/plain');
     res.send(time);
     time = new Date().toString();
 });
