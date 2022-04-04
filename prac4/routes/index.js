@@ -6,10 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-var date;
+var time = " ";
 router.get('/last.txt', function(req, res, next) {
-  date = new Date();
-  res.send(String(date));
+    res.send(time);
+    time = new Date().toString();
 });
 
 module.exports = router;
