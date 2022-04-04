@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
 
 var time = " ";
 router.get('/last.txt', function(req, res, next) {
+    res.setHeader('Content-Type', 'text/plain');
     res.send(time);
     time = new Date().toString();
 });
