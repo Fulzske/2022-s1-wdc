@@ -19,7 +19,7 @@ router.get('/log.html', function(req, res, next) {
     time = new Date().toString();
 
     while(counter >= 0) {
-        times = "<li>" + d + "</li>";
+        times = "<li>" + time + "</li>";
     }
 
     res.send(`<!DOCTYPE html>
