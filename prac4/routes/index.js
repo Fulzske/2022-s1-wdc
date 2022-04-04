@@ -6,13 +6,32 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-var time = "";
+var d = "";
 router.get('/last.txt', function(req, res, next) {
-    res.send(time);
-    time = new Date().toString();
+    res.send(d);
+    d = new Date().toString();
 });
 
+var times = "";
+var counter = 0;
+router.get('/log.html', function(req, res, next) {
 
+    time = new Date().toString();
 
+    while(counter >= 0) {
+        times = "<li>" + d + "</li>";
+    }
+
+    res.send(`<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>log</title>
+    </head>
+    <body>
+    <ul>${times}</ul>
+    </body>
+    </html>`);
+});
 
 module.exports = router;
