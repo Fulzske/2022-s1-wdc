@@ -8,12 +8,23 @@ function new_post() {
 
     let new_p = {title: title, desc: desc, tags: tags}
     post_list.push(new_p);
-    update_posts();
+
+    get_posts();
 }
 
 function get_posts() {
+
     let xhttp = new XMLHttpRequest();
-    xhttp.on
+
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            post_list JSON.Parse(this.responseText);
+            update_posts();
+        }
+    };
+
+    xhttp.open("get", "/posts");
+    xhttp.send();
 }
 
 function update_posts() {
