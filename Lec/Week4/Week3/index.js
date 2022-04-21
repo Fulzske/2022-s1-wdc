@@ -5,8 +5,11 @@ function new_post() {
 }
 
 function reset_posts(){
-    
-    let post = document.createElement('DIV');
+
+    let container = document.getElementsByTagName('main');
+    while(container.children.length > 1) {
+        container.
+    }
 }
 
 function add_post(title,desc,tags) {
