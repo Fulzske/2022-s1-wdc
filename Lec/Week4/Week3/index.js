@@ -1,7 +1,22 @@
+
+let post_list = [];
+
 function new_post() {
     let title = document.getElementById('post-title').value;
     let desc = document.getElementById('post-content').value;
     let tags = document.getElementById('post-tags').value.split(" ");
+
+    add_post(title,desc,tags);
+
+    let new = {title: title, desc: desc, tags: tags}
+    update_posts();
+}
+
+function update_posts() {
+    reset_posts();
+    for (let post of post_list) {
+        add_post(post.title,post.desc,post.tags)
+    }
 }
 
 function reset_posts(){
