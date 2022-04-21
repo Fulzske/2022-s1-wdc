@@ -97,3 +97,4 @@ function add_post(title,desc,tags) {
 
 }
 
+setInterval(get_posts, 10000);
