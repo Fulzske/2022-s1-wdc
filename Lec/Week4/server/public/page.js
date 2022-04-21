@@ -7,7 +7,8 @@ function new_post() {
     let tags = document.getElementById('post-tags').value.split(" ");
 
     let new_p = {title: title, desc: desc, tags: tags}
-    post_list.push(new_p);
+
+    
 
     get_posts();
 }
