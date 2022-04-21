@@ -17,7 +17,8 @@ router.get('/posts', function(req, res, next) {
 
 
 router.post('/new', function(req, res, next) {
-  console.log(req.body);
+  //console.log(req.body);
+  post_list.push(req.body);
   res.end();
 });
 
