@@ -1,21 +1,12 @@
-var counter = 123;
-
-function upvote() {
-    counter++;
-    var disp = document.getElementById("count");
-
-    disp.innerHTML = counter;
-}
-
-function downvote() {
-    counter--;
-    document.getElementById("count").innerHTML = counter;
-}
-
 function new_post() {
     let title = document.getElementById('post-title').value;
     let desc = document.getElementById('post-content').value;
     let tags = document.getElementById('post-tags').value.split(" ");
+}
+
+function reset_posts(){
+    
+    let post = document.createElement('DIV');
 }
 
 function add_post(title,desc,tags) {
