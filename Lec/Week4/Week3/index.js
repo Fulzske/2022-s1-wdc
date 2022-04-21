@@ -27,10 +27,10 @@ function add_post(title,desc,tags) {
     votes.classList.add("votes");
 
     let votes_plus = document.createElement('BUTTON');
-    votes_plus.innerText = "+";
+    votes_plus.innerText = '+';
 
     let votes_minus = document.createElement('BUTTON');
-    votes_minus.innerText = "-";
+    votes_minus.innerText = '-';
 
     let votes_p = document.createElement('P');
     votes_p.innerHTML = '<span class="count">0</span><br />votes';
