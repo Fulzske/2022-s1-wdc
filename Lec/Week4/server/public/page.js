@@ -12,6 +12,7 @@ function new_post() {
 }
 
 function get_posts() {
+    let xhttp = new XmlHttpRequest();
     
 }
 
