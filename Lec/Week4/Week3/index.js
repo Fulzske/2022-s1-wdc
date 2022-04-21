@@ -8,7 +8,7 @@ function reset_posts(){
 
     let container = document.getElementsByTagName('main');
     while(container.children.length > 1) {
-        container.
+        container.children[1].remove();
     }
 }
 
