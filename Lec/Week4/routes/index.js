@@ -10,7 +10,20 @@ var counter = 0;
 
 router.get('/count', function(req, res,next) {
   counter++;
-  res.send(String(counter));
+  res.send(`html>
+
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+
+  <body>
+    <h1>${counter}</h1>
+    <p>Welcome to Express</p>
+  </body>
+
+  </html>
+  `);
 });
 
 module.exports = router;
