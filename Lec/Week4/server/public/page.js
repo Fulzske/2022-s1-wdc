@@ -11,6 +11,10 @@ function new_post() {
     update_posts();
 }
 
+function get_posts() {
+    
+}
+
 function update_posts() {
     reset_posts();
     for (let post of post_list) {
