@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.menuitem span {
+    padding: 1em;
+}
+
+.menuitem span a {
+    color: black;
+}
+
+main {
+    clear: both;
+    top: 25vh; /*25% down the page within parent element */
+    text-align: center;
+    position: relative;
+}
+
+input[name=q] { /* targets all attribute names with q, used specificially for forms */
+    border: 1px solid #dddddd;
+    border-radius:2em;
+    padding: 1.5em;
+    width: 32em;
+}
+
+main button {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 0.3em;
+}
+
+hr {
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #dddddd;
+}
+
+#logo {
+    width:
+}
+
