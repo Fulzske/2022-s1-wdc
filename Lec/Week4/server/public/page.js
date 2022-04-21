@@ -16,8 +16,8 @@ function new_post() {
         }
     };
 
-    xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.open("POST", "/new");
+    xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(new_p));
 }
 
