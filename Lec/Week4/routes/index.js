@@ -10,7 +10,7 @@ var counter = 0;
 
 router.get('/count', function(req, res,next) {
   counter++;
-  res.send(`html>
+  res.send(`<html>
 
   <head>
     <title>Express</title>
