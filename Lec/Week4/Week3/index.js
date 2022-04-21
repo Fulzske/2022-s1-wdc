@@ -6,9 +6,8 @@ function new_post() {
     let desc = document.getElementById('post-content').value;
     let tags = document.getElementById('post-tags').value.split(" ");
 
-    add_post(title,desc,tags);
-
-    let new = {title: title, desc: desc, tags: tags}
+    let new_p = {title: title, desc: desc, tags: tags}
+    post_list.push(new_p);
     update_posts();
 }
 
