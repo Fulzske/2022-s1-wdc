@@ -12,8 +12,8 @@ function new_post() {
 }
 
 function get_posts() {
-    let xhttp = new XmlHttpRequest();
-    
+    let xhttp = new XMLHttpRequest();
+    xhttp.on
 }
 
 function update_posts() {
