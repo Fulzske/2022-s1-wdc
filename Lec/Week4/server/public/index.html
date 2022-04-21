@@ -1,13 +1,88 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WDC Overflow</title>
+        <link rel="stylesheet" href="stylesheets/style.css" >
+        <script src="index.js></script>
+    </head>
+    <body onload="showPosts()">
+        <header>
+            <button>Signup</button>
+            <button>Login</button>
+            <img class="logo" src="images/logo.png" alt="WDC Overflow" />
+            <ul>
+                <li>Products</li>
+                <li>Customers</li>
+                <li>Use Cases</li>
+            </ul>
+        </header>
+        <main>
 
-<head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+            <div class="search">
+                <button class="right">Ask Question</button>
+                <h2>Search Results</h2>
+                <button class="right">Search</button>
+                <input type="text" name="search" />
+            </div>
 
-<body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
+            <div class="post">
 
+                <div class="votes">
+                    <button>+</button>
+                    <p><span class="count">123</span><br />votes</p>
+                    <button>-</button>
+                </div>
+                <div class="content">
+                    <h3><a href="post">This is a post</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus, lorem non varius consequat, ipsum magna vestibulum lectus, et fringilla tellus augue id nisl. Donec tempus est a hendrerit ornare. Phasellus blandit est in malesuada interdum. Mauris finibus vehicula turpis vel lobortis. Phasellus tempor elit massa. Morbi vulputate leo a neque mollis varius. Donec ultricies aliquam vulputate. Nunc dapibus lectus a risus rutrum pulvinar.</p>
+                    <span class="tag">Tag1</span><span class="tag">Tag2</span><span class="date">Date blah</span>
+                </div>
+
+            </div>
+
+            <div id="posts">
+
+            <div class="post">
+
+                <div class="votes">
+                    <button>+</button>
+                    <p><span class="count">123</span><br />votes</p>
+                    <button>-</button>
+                </div>
+                <div class="content">
+                    <h3><a href="post">This is a post</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus, lorem non varius consequat, ipsum magna vestibulum lectus, et fringilla tellus augue id nisl. Donec tempus est a hendrerit ornare. Phasellus blandit est in malesuada interdum. Mauris finibus vehicula turpis vel lobortis. Phasellus tempor elit massa. Morbi vulputate leo a neque mollis varius. Donec ultricies aliquam vulputate. Nunc dapibus lectus a risus rutrum pulvinar.</p>
+                    <span class="tag">Tag1</span><span class="tag">Tag2</span><span class="date">Date blah</span>
+                </div>
+
+            </div>
+
+            <div class="post">
+
+                <div class="votes">
+                    <button>+</button>
+                    <p><span class="count">123</span><br />votes</p>
+                    <button>-</button>
+                </div>
+                <div class="content">
+                    <h3><a href="post">This is a post</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus, lorem non varius consequat, ipsum magna vestibulum lectus, et fringilla tellus augue id nisl. Donec tempus est a hendrerit ornare. Phasellus blandit est in malesuada interdum. Mauris finibus vehicula turpis vel lobortis. Phasellus tempor elit massa. Morbi vulputate leo a neque mollis varius. Donec ultricies aliquam vulputate. Nunc dapibus lectus a risus rutrum pulvinar.</p>
+                    <span class="tag">Tag1</span><span class="tag">Tag2</span><span class="date">Date blah</span>
+                </div>
+            </div>
+
+        </main>
+        <section>
+            <h2>Ask a Question</h2>
+            <input id="post-title" type="text" placeholder="Title" /><br />
+            <textarea id="post-content" placeholder="Details..." ></textarea><br />
+            <input id="post-tags" type="text"  placeholder="Tags" /><br />
+            <button onclick="add_post('t','desc','tags');">Create Post</button>
+        </section>
+        <footer>
+            <h4>This is a footer</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus, lorem non varius consequat, ipsum magna vestibulum lectus, et fringilla tellus augue id nisl. Donec tempus est a hendrerit ornare. Phasellus blandit est in malesuada interdum. Mauris finibus vehicula turpis vel lobortis. Phasellus tempor elit massa. Morbi vulputate leo a neque mollis varius. Donec ultricies aliquam vulputate. Nunc dapibus lectus a risus rutrum pulvinar. </p>
+        </footer>
+    </body>
 </html>
