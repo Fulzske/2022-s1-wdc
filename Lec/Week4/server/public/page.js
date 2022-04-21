@@ -12,16 +12,13 @@ function new_post() {
 
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            post_list JSON.Parse(this.responseText);
-            update_posts();
+            get_posts();
         }
     };
 
+    xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.open("POST", "/new");
     xhttp.send(JSON.stringify(new_p));
-
-
-    get_posts();
 }
 
 function get_posts() {
