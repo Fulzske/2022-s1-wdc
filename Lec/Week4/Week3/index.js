@@ -12,6 +12,12 @@ function downvote() {
     document.getElementById("count").innerHTML = counter;
 }
 
+function new_post() {
+    let title = document.getElementById('post-title').value;
+    let desc = document.getElementById('post-content').value;
+    let tags = document.getElementById('post-tags').value.split(" ");
+}
+
 function add_post(title,desc,tags) {
 
     let post = document.createElement('DIV');
@@ -39,7 +45,7 @@ function add_post(title,desc,tags) {
     content.innerHTML = `<h3><a href="post">${title}</a></h3>
     <p>${desc}</p>
 
-    
+
     <span class="tag">Tag1</span><span class="tag">Tag2</span><span class="date">${new Date().toLocaleString()}</span>`;
 
     post.appendChild(votes);
