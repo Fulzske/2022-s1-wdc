@@ -6,7 +6,7 @@ function new_post() {
 
 function reset_posts(){
 
-    let container = document.getElementsByTagName('main');
+    let container = document.getElementsByTagName('main')[0];
     while(container.children.length > 1) {
         container.children[1].remove();
     }
