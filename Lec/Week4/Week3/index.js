@@ -39,14 +39,23 @@ function add_post(title,desc,tags) {
     votes.appendChild(votes_p);
     votes.appendChild(votes_minus);
 
-    let content = document.createElement("DIV");
+    let content = document.createElement('DIV');
     content.classList.add("content");
 
     content.innerHTML = `<h3><a href="post">${title}</a></h3>
-    <p>${desc}</p>
+    <p>${desc}</p>`;
 
+    for(let tag of tags) {
+        let t = document.createElement('span');
+        t.classList.add('tag');
+        t.innerText = tag;
+        content.appendChild(t);
+    }
 
-    <span class="tag">Tag1</span><span class="tag">Tag2</span><span class="date">${new Date().toLocaleString()}</span>`;
+    let d = document.createElement('span');
+    d.classList.add('date');
+    d.innerText = new Date();toLocaleString();
+    content.appendChild(d);
 
     post.appendChild(votes);
     post.appendChild(content);
