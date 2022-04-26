@@ -8,13 +8,13 @@ CREATE TABLE users (
     phone CHAR(12),
     last_login DATETIME,
     login_ip CHAR(15),
-    PRIMARY KEY id
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE posts (
     id INT,
     user INT,
-    email VARCHAR(127),
+    title VARCHAR(255),
     password VARCHAR(255),
     phone CHAR(12),
     last_login DATETIME,
