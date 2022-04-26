@@ -15,9 +15,8 @@ CREATE TABLE posts (
     id INT,
     user INT,
     title VARCHAR(255),
-    password VARCHAR(255),
-    phone CHAR(12),
-    last_login DATETIME,
-    login_ip CHAR(15),
-    PRIMARY KEY id
+    content TEXT,
+    timestamp DATETIME,
+    views INT,
+    PRIMARY KEY (id)
 );
