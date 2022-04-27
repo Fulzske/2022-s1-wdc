@@ -1,0 +1,10 @@
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| shop               |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
