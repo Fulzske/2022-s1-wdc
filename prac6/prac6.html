@@ -36,11 +36,11 @@
                 </nav>
             </header>
 
-            <div class="pad" id="ad" v-if="show_ad == true">
+            <div class="pad" id="ad">
                 <button class="pure-button" style="float:right;" onclick="vueinst.show_ad = false;">close</button>
-                <img v-bind:src="special.url" alt="special.url" onclick="vueinst.special=SPECIALS[Math.floor((Math.random() * 3))];" />
-                <h3>{{special.name}}</h3>
-                <p>{{special.price}}</p>
+                <img src="" alt="" onclick="vueinst.special=SPECIALS[Math.floor((Math.random() * 3))];" />
+                <h3>Some Name</h3>
+                <p>$Some.Price</p>
             </div>
 
 
