@@ -46,5 +46,6 @@ var vueinst = new Vue({
     data: {
         choose: 'Choose ...',
         special: SPECIALS[0],
+        show_ad: true,
     },
 })
