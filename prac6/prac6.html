@@ -67,7 +67,7 @@
 
                     <h3>Dark Mode:</h3>
                     <div class="pure-button-group" role="group" aria-label="Nightmode">
-                        <button class="pure-button pure-button-active" onclick="vueinst.dark_mode = false;">OFF</button>
+                        <button class="pure-button" v-bind:class=" { 'pure-button-active': !dark_mode}" onclick="vueinst.dark_mode = false;">OFF</button>
                         <button class="pure-button" v-bind:class="{ 'pure-button-active': dark_mode, 'pure-button-primary': dark_mode }" onclick="vueinst.dark_mode = true;">ON</button>
                     </div>
 
