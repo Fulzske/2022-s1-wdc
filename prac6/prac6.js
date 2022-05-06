@@ -55,4 +55,9 @@ var vueinst = new Vue({
         c_text: 'type your comment here',
         c_arr: [],
     },
+    methods: {
+        comment(text) {
+            this.c_arr.push(this.c_text);
+        }
+    },
 })
