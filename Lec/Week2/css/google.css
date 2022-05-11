@@ -35,6 +35,8 @@ input[name=q] { /* targets all attribute names with q, used specificially for fo
     width: 32em;
 }
 
+
+
 main button {
     padding: 0.5em 1em;
     margin: 0.5em;
