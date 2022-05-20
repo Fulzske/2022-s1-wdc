@@ -19,14 +19,19 @@ router.get('/brew', function(req, res, next) {
 
 router.get('/pass-it-on', function(req, res, next) {
   var message = req.query.message;
+  let first = false;
   if (message == "") {
       res.sendStatus("400");
-  } else if (drink == "coffee") {
-      res.sendStatus(418);
   } else {
-      res.sendStatus(400);
+    if (first == false) {
+      res.send("first);
+      first=true;
+      message = req.body.message;
+    } else {
+        res.send(message);
+        message = req.body.message;
+    }
   }
 });
-
 
 module.exports = router;
