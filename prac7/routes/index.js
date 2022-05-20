@@ -17,4 +17,16 @@ router.get('/brew', function(req, res, next) {
   }
 });
 
+router.get('/pass-it-on', function(req, res, next) {
+  var message = req.query.message;
+  if (message == "") {
+      res.sendStatus("400");
+  } else if (drink == "coffee") {
+      res.sendStatus(418);
+  } else {
+      res.sendStatus(400);
+  }
+});
+
+
 module.exports = router;
