@@ -6,6 +6,8 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+module.exports = router;
+
 var post = []
 router.post('/addpost', function(req, res, next) {
     var title = req.body.title;
@@ -21,9 +23,6 @@ router.get('/getposts', function(req, res, next) {
   }
   res.send(JSON.stringify(info));
 });
-
-
-module.exports = router;
 
 router.use(function(req, res, next) {
   if (req.method === 'POST') {
