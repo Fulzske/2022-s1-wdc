@@ -24,7 +24,6 @@ router.get('/getposts', function(req, res, next) {
 
 
 router.use('/users', function(req, res, next) {
-
 });
 
 router.use(function(req, res, next) {
