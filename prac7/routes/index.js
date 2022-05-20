@@ -22,7 +22,7 @@ router.get('/brew', function(req, res, next) {
 let first = false;
 var message;
 router.post('/pass-it-on', function(req, res, next) {
-    if (req.body.message == null || req.body.message == "") {
+    if (req.body.message == "") {
         res.sendStatus(400);
     } else {
         if (first == false) {
