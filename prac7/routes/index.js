@@ -24,7 +24,7 @@ router.get('/pass-it-on', function(req, res, next) {
       res.sendStatus("400");
   } else {
     if (first == false) {
-      res.send("first);
+      res.send("first");
       first=true;
       message = req.body.message;
     } else {
