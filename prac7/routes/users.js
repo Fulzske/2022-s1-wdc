@@ -10,7 +10,7 @@ module.exports = router;
 
 router.use(function(req, res, next) {
   if (req.method === "POST") {
-      if (req.is('application/json') === null) {
+      if (req.is('application/json') === false) {
           res.status(412).send();
       } else {
           next();
