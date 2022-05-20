@@ -19,21 +19,21 @@ router.get('/brew', function(req, res, next) {
   }
 });
 
-router.get('/pass-it-on', function(req, res, next) {
-  var message;
-  let first = false;
-  if (req.body.message == null || req.body.message == "") {
-      res.sendStatus("400");
-  } else {
-    if (first == false) {
-      res.send("first");
-      first=true;
-      message = req.body.message;
+let first = false;
+var message;
+router.post('/pass-it-on', function(req, res, next) {
+    if (req.body.message == null || req.body.message == "") {
+        res.sendStatus(400);
     } else {
-        res.send(message);
-        message = req.body.message;
+        if (first == false) {
+            res.send("first");
+            first = true;
+            message = req.body.message;
+        } else {
+            res.send(message);
+            message = req.body.message;
+        }
     }
-  }
 });
 
 
