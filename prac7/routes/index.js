@@ -6,6 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+module.exports = router;
+
 router.get('/brew', function(req, res, next) {
   var drink = req.query.drink;
   if (drink == "tea") {
@@ -20,7 +22,7 @@ router.get('/brew', function(req, res, next) {
 router.get('/pass-it-on', function(req, res, next) {
   var message;
   let first = false;
-  if (req.body.message == null) {
+  if (req.body.message == null || req.body.message == "") {
       res.sendStatus("400");
   } else {
     if (first == false) {
@@ -34,4 +36,4 @@ router.get('/pass-it-on', function(req, res, next) {
   }
 });
 
-module.exports = router;
+
