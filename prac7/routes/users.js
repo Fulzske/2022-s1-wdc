@@ -19,4 +19,13 @@ router.post('/addpost', function(req, res, next) {
     res.send()
 });
 
+router.get('/getposts', function(req, res, next) {
+  var content = [];
+  for (var i = post.length - 1; i >= 0; i--) {
+      content.push(post[i]);
+  }
+  res.send(JSON.stringify(content));
+});
+
+
 module.exports = router;
