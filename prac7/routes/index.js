@@ -50,7 +50,6 @@ router.get('/cookie', function(req, res, next) {
     } else {
         res.cookie('task3_1', '1');
     }
-
     res.send();
 });
 

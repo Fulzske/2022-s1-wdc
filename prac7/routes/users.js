@@ -36,11 +36,3 @@ router.get('/getposts', function(req, res, next) {
   res.send(JSON.stringify(info));
 });
 
-router.get('/cookie', function(req, res, next) {
-  if (req.cookie.task3_1) {
-      res.cookie('task3_1', Number(res.cookie.task3_1) + 1);
-
-  } else {
-      res.cookie('task3_1', 1);
-  }
-});
