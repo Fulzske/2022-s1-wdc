@@ -22,5 +22,4 @@ router.get('/getposts', function(req, res, next) {
   res.send(JSON.stringify(content));
 });
 
-
 module.exports = router;
