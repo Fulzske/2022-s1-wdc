@@ -5,17 +5,17 @@
     <meta content="">
   </head>
   <body>
-  
+
     <main>
-  
+
         <h1>Sentence Builder</h1>
         <label for="suffix">Suffix</label><input id="suffix" type="text" />
         <label for="lines">Lines</label><textarea id="lines"></textarea>
         <button onclick="send()">Submit</button>
         <pre id="output"></pre>
-    
+
     </main>
-  
+
     <script>
 
         function send() {
@@ -32,6 +32,7 @@
             xhttp.open("POST", "/combine", true);
             xhttp.setRequestHeader("Content-type", "application/json");
             xhttp.send(JSON.stringify({ lines: lines, suffix: suffix }));
+            
 
         }
 
