@@ -8,11 +8,6 @@ router.get('/', function(req, res, next) {
 
 var post = []
 router.post('/addpost', function(req, res, next) {
-    if (req.is('application/json') === null || req.is('application/json') === false) {
-        res.status(412).send();
-    } else {
-        next();
-    }
     var title = req.body.title;
     var content = req.body.content;
     post.push({ "title": title, "content": content })
