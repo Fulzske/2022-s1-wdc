@@ -15,11 +15,11 @@ router.post('/addpost', function(req, res, next) {
 });
 
 router.get('/getposts', function(req, res, next) {
-  var content = [];
+  var info = [];
   for (var i = post.length - 1; i >= 0; i--) {
-      content.push(post[i]);
+      info.push(post[i]);
   }
-  res.send(JSON.stringify(content));
+  res.send(JSON.stringify(info));
 });
 
 module.exports = router;
