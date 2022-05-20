@@ -44,3 +44,10 @@ router.post('/combine', function(req, res, next) {
   res.send(message);
 });
 
+router.post('/users/addpost', function(req, res, next) {
+    
+
+});
+
+
+
