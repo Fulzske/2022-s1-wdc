@@ -20,7 +20,7 @@ router.get('/brew', function(req, res, next) {
 router.get('/pass-it-on', function(req, res, next) {
   var message;
   let first = false;
-  if (req.body.message == "") {
+  if (req.body.message == null) {
       res.sendStatus("400");
   } else {
     if (first == false) {
