@@ -25,7 +25,7 @@ router.get('/result', function(req, res, next) {
     });
   });
 
-router.post('/signup', function(req, res, next){
+router.post('/signup.html', function(req, res, next){
     req.pool.getConnection(function(error, connection){
         if (error){
             console.log(error);
