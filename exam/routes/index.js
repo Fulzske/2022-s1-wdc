@@ -6,40 +6,47 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/signup', function(req, res, next) {
-    if ('username' in req.body &&
-        'email' in req.body &&
-        'password' in req.body
-    ){
-        console.log(req.body);
-        req.pool.getConnection(function(err, connection) {
-        if (err) {
+router.get('/result', function(req, res, next) {
+    //Connect to the database
+    req.pool.getConnection( function(err,connection) {
+      if (error) {
+        res.sendStatus(500);
+        return;
+      }
+      var query = "SHOW TABLES";
+      connection.query(query, function(err, rows, fields) {
+        connection.release(); // release connection
+        if (error) {
+          res.sendStatus(500);
+          return;
+        }
+        res.json(rows); //send response
+      });
+    });
+  });
+
+router.post('/signup', function(req, res, next){
+    req.pool.getConnection(function(error, connection){
+        if (error){
+            console.log(error);
             res.sendStatus(500);
             return;
         }
         var query = "INSERT INTO Users (username, email, password) VALUES (?,?,?, SHA2(?,224));";
-        console.log("very good");
-        connection.query(query, [req.body.user_name,
-                req.body.email,
-                req.body.password
-            ],
-            function(err, rows, fields) {
-                connection.release(); // release connection
-                if (err) {
-                    // console.log();
-                    res.sendStatus(500);
-                    console.log("bad");
-                    return;
-                }
-                res.end();
-            });
+        connection.query(query, [req.body.username,
+            req.body.email,
+            req.body.password
+        ],
 
+        function(error, rows, fields) {
+            connection.release(); // release connectio
+            if(error){
+                res.sendStatus(500);
+                return;
+            }
+            res.end();
+        });
     });
-
-    }
-    else{
-        res.sendStatus(402);
-    }
 });
 
 
