@@ -22,6 +22,21 @@ CREATE TABLE movies {
 };
 
 INSERT INTO movies (id, title, duration, genre)
-VALUES(10, "The Hulk", "Nguyen", '2016-12-21', 'nguyen@gamil.com', 0213123, 'adelaide', 12, 'Australia', 'SA', 5000, true );
+VALUES(10, "The Hulk", "120", 'Action');
 
+CREATE TABLE theater_room {
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(255),
+  PRIMARY KEY (id)
+};
+
+INSERT INTO theater_room (id, name)
+VALUES(1, "Theater #1");
+
+CREATE TABLE screening {
+  id int NOT NULL AUTO_INCREMENT,
+  movie_id int,
+  FOREIGN KEY (id) REFERENCES users(user_id) ON DELETE CASCADE,
+  FOREIGN KEY (friend_id) REFERENCES users(user_id) ON DELETE CASCADE
+};
 
