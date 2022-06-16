@@ -46,8 +46,8 @@ router.get('/posts', function(req, res, next) {
 
 router.post('/addpost', function(req, res, next) {
 
-    if( "title" in req.body && req.body.title != null &&
-        "content" in req.body && req.body.content != null &&
+    if( "title" in req.body && req.body.title !== null &&
+        "content" in req.body && req.body.content !== null &&
         "tags" in req.body ) {
         req.body.author = req.session.user;
 
@@ -70,7 +70,7 @@ router.post('/addpost', function(req, res, next) {
                 // Build & run query
                 let tags = '';
                 for(tag of req.body.tags){
-                    tags += `('${tag}',LAST_INSERT_ID()),`
+                    tags += `('${tag}',LAST_INSERT_ID()),`;
                 }
                 tags = tags.replace(/,$/,'');
                 var query = 'INSERT INTO question_tags (tagname,question) VALUES '+tags+';';

@@ -33,18 +33,15 @@ router.post('/login', function(req, res, next) {
                   } else {
                       return res.sendStatus(401);
                   }
-
               } else {
                   res.sendStatus(401);
               }
             });
         });
 
-
     } else {
         res.sendStatus(400);
     }
-
 });
 
 
