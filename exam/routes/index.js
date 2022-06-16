@@ -25,10 +25,10 @@ router.get('/result', function(req, res, next) {
     });
   });
 
-router.post('/signup.html', function(req, res, next){
-    req.pool.getConnection(function(error, connection){
-        if (error){
-            console.log(error);
+router.post('/signup', function(req, res, next){
+    req.pool.getConnection(function(err, connection){
+        if (err){
+            console.log(err);
             res.sendStatus(500);
             return;
         }
@@ -38,15 +38,45 @@ router.post('/signup.html', function(req, res, next){
             req.body.password
         ],
 
-        function(error, rows, fields) {
+        function(err, rows, fields) {
             connection.release(); // release connectio
-            if(error){
+            if(err){
                 res.sendStatus(500);
                 return;
             }
             res.end();
         });
     });
+});
+
+router.post('/login', function(req, res, next) {
+  req.pool.getConnection(function(err, connection) {
+      if (err) {
+          res.sendStatus(500);
+          return;
+      }
+      var query = "SELECT id, username, name, email FROM Users WHERE username= ? AND password = SHA2(?,224);";
+      connection.query(query, [
+          req.body.username,
+          req.body.password
+      ],function(err, rows, fields) {
+          connection.release(); // release connection
+          if (err) {
+              res.sendStatus(500);
+              return;
+          }
+          //   console.log(rows);
+          if (rows.length > 0){
+              // console.log(rows[0]);
+              req.session.user = rows[0];
+              currentUser = rows[0];
+              res.json(rows[0]);
+          }
+          else {
+              res.sendStatus(401);
+          }
+      });
+  });
 });
 
 module.exports = router;
