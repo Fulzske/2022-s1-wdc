@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/signup', function(req, res, next) {
-    console.log("good");
     if ('username' in req.body &&
         'email' in req.body &&
         'password' in req.body
@@ -18,7 +17,6 @@ router.post('/signup', function(req, res, next) {
             res.sendStatus(500);
             return;
         }
-        console.log("good");
         var query = "INSERT INTO Users (username, email, password) VALUES (?,?,?, SHA2(?,224));";
         console.log("very good");
         connection.query(query, [req.body.user_name,
