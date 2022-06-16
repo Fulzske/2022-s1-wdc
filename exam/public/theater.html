@@ -5,20 +5,25 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <script src="/javascripts/theater.js"></script>
     </head>
+    <body>
         <div class="outer">
             <div class="upperdiv">
                 <div class="movie">
-                    <label>Select Movie </label>
-                    <select id="movie">
-                        <option value="10">Joker ($12)</option>
-                        <option value="12">Avengers End Game ($10)</option>
-                        <option value="8">Toy Story 4 ($8)</option>
-                        <option value="9">The Lion King ($9)</option>
+                    <label for="movie" id="movie">Select Movie </label>
+                    <select name="movie" id="movie">
+                        <option value="10">sponge bob</option>
+                        <option value="12">simpsons</option>
+                        <option value="8">hero</option>
+                        <option value="9">family guy</option>
                     </select>
                 </div>
                 <div class="date">
-                    <label>Choose date </label>
-                    <input type="date"></select>
+                    <label for="date" id="date">Choose date </label>
+                    <input type="date" id="date"></select>
+                </div>
+                <button type="submit" onclick = "filterSeats()">Filter Seats</button>
+
+                <div class="searchbar">
                 </div>
             </div>
             <div class="availability">
@@ -86,7 +91,7 @@
                 <button onclick="cancel()" type="submit "class="cancel">Cancel</button>
                 <button onclick="purchase()" type="submit "class="purchase">Purchase</button>
             </div>
-
         </div>
     </div>
+    </body>
 </html>
