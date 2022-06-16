@@ -32,7 +32,7 @@ router.post('/signup', function(req, res, next){
             res.sendStatus(500);
             return;
         }
-        var query = "INSERT INTO Users (username, email, password) VALUES (?,?,?, SHA2(?,224));";
+        var query = "INSERT INTO Users (username, email, password) VALUES (?,?, SHA2(?,224));";
         connection.query(query, [req.body.username,
             req.body.email,
             req.body.password
