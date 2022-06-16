@@ -1,0 +1,79 @@
+.outerouterdiv {
+    background-color:white;
+}
+.outer {
+    clear: both;
+    top: 5vh;
+    text-align: center;
+    position: relative;
+    border-color: #9A9A9A;
+    height: 600px;
+    width: 350px;
+    flex-direction: column;
+    border: 1px solid #9A9A9A;
+    box-align: center;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+}
+
+select {
+    width:100px;
+}
+
+.movie {
+    justify-content: left;
+    flex-direction: column;
+}
+
+.date {
+    justify-content: right;
+}
+
+.upperdiv {
+    background-color:#101D42;
+    display:inline-block;
+    justify-content: space-evenly;
+    color:white;
+    border-radius: 15px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+input {
+    border: 1px solid #9A9A9A;
+    border-radius:1em;
+    padding: 1em;
+    width: 80%;
+}
+
+.signup {
+    background-color: #2E81DA;
+    border-color: #2E81DA;
+    color: white;
+    height: 50px;
+    width: 280px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.cancel {
+    background-color: red;
+    border-color: red;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12;
+
+}

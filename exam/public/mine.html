@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="/stylesheets/mine.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="/javascripts/mine.js"></script>
+    </head>
+    <div class="outerouterdiv">
+        <div class="outer">
+            <div class="upperdiv">
+                <div class="movie">
+                    <label>Select Movie </label>
+                    <select id="movie">
+                        <option value="10">Joker ($12)</option>
+                        <option value="12">Avengers End Game ($10)</option>
+                        <option value="8">Toy Story 4 ($8)</option>
+                        <option value="9">The Lion King ($9)</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <label>Choose date </label>
+                    <input type="date"></select>
+                </div>
+            </div>
+            <div class="lowerdiv">
+                <form action="/" method="POST"></form>
+                <label for="username">User name</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter a user name"...><br><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter an email address"><br><br>
+                <label for="password">Password</label><br>
+                <input minlength="8" type="password" id="password" name="password" placeholder="Enter a password"...><br><br>
+                <label for="confirmpassword">Confirm password</label>
+                <input minlength="8" type="password" id="password" name="password" placeholder="Confirm your password"...>
+                <div class ="signin" >
+                     Already have account? <a href="./Sign.html">Sign In</a></p>
+                </div>
+                <div class="save">
+                    <button onclick="sign_up()" type="submit "class="signup">Sign up</button><br><br>
+                    <button onclick="go_back()" class="cancel">Cancel</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</html>
