@@ -36,6 +36,7 @@ router.post('/signup', function(req, res, next){
         connection.query(query, [req.body.username, req.body.email, req.body.password], function(err, rows, fields) {
             connection.release(); // release connection
             if(err){
+                console.log(err);
                 res.sendStatus(500);
                 return;
             }

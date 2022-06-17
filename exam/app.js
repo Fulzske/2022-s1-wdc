@@ -19,7 +19,7 @@ var app = express();
 // so this code needs to be *before* the app.use('/', routes);
 // Express will run this function on every request and then continue with the next module, index.js.
 // So for all requests that we handle in index.js, we’ll be able to access the pool of connections using req.pool
-var dbConnectionPool = mysql.createPool({ host: 'localhost', database: 'web_exam' });
+var dbConnectionPool = mysql.createPool({ host: 'localhost', database: 'exam' });
 app.use(function(req, res, next) {
     req.pool = dbConnectionPool;
     next();
