@@ -10,8 +10,8 @@ CREATE TABLE users (
   PRIMARY KEY (id)
 );
 
-INSERT INTO users (username, email, password)
-VALUES("Fulei", "a1629489@student.adelaide.edu.au", '123456789');
+INSERT INTO users (id, username, email, password)
+VALUES(1, "Fulei", "a1629489@student.adelaide.edu.au", "123456789");
 
 CREATE TABLE movies (
   id int NOT NULL AUTO_INCREMENT,
