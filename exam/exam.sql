@@ -24,59 +24,57 @@ CREATE TABLE movies (
 INSERT INTO movies (id, title, duration, genre)
 VALUES(1, "The Hulk", 120, 'Action');
 
-CREATE TABLE theater_room(
+CREATE TABLE cinema_room(
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(255),
+  room_number int,
   PRIMARY KEY (id)
 );
 
-INSERT INTO theater_room (id, name)
-VALUES(1, "Theater room one");
+INSERT INTO cinema_room (id, room_number)
+VALUES(1, "23");
 
 CREATE TABLE screenings (
   id int NOT NULL AUTO_INCREMENT,
   movie_id int,
-  theater_room_id int,
+  cinema_room_id int,
   PRIMARY KEY (id),
   FOREIGN KEY (movie_id) REFERENCES movies(id),
-  FOREIGN KEY (theater_room_id) REFERENCES theater_room(id)
+  FOREIGN KEY (cinema_room_id) REFERENCES cinema_room(id)
 );
 
-INSERT INTO screenings (id, movie_id, theater_room_id)
+INSERT INTO screenings (id, movie_id, cinema_room_id)
 VALUES(1, 1, 1);
 
 CREATE TABLE seats (
   id int NOT NULL AUTO_INCREMENT,
-  theater_room_id int,
+  cinema_room_id int,
   seatnumber int,
   seatletter varchar(1),
   PRIMARY KEY (id),
-  FOREIGN KEY (theater_room_id) REFERENCES theater_room(id)
+  FOREIGN KEY (cinema_room_id) REFERENCES cinema_room(id)
 );
 
-INSERT INTO seats (id, seatnumber, seatletter, theater_room_id)
+INSERT INTO seats (id, seatnumber, seatletter, cinema_room_id)
 VALUES(1, 1, "a", 1);
 
-CREATE TABLE reserved_seats (
+CREATE TABLE show_seats (
   id int NOT NULL AUTO_INCREMENT,
   seat_id int,
-  theater_room_id int,
+  price int,
   screening_id int,
   date date,
   PRIMARY KEY (id),
   FOREIGN KEY (seat_id) REFERENCES seats(id),
-  FOREIGN KEY (theater_room_id) REFERENCES theater_room(id),
   FOREIGN KEY (screening_id) REFERENCES screenings(id)
 );
 
-INSERT INTO reserved_seats (id, seat_id, theater_room_id, screening_id, date)
-VALUES(1, 1, 1, 1, "2022-06-16");
+INSERT INTO show_seats (id, seat_id, price, screening_id)
+VALUES(1, 1, 12, 1);
 
-CREATE TABLE reservations (
+CREATE TABLE bookings (
   id int NOT NULL AUTO_INCREMENT,
   screening_id int,
   user_id int,
-  seat_id int,
   date date,
   PRIMARY KEY (id),
   FOREIGN KEY (screening_id) REFERENCES screenings(id),
