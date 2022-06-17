@@ -1,0 +1,112 @@
+.outer {
+    clear: both;
+    top: 5vh;
+    text-align: center;
+    position: relative;
+    border-color: #9A9A9A;
+    height: 600px;
+    width: 350px;
+    flex-direction: column;
+    border: 1px solid #9A9A9A;
+    box-align: center;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+}
+
+select {
+    width: 100px;
+}
+
+.upperdiv {
+    background-color:#101D42;
+    display:inline-block;
+    justify-content: space-evenly;
+    color:white;
+    border-radius: 15px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.signup {
+    background-color: #2E81DA;
+    border-color: #2E81DA;
+    color: white;
+    height: 50px;
+    width: 280px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+.availability {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.na {
+    color: grey;
+}
+
+.selected {
+    color: blue;
+}
+
+.occupied {
+    color: red;
+}
+
+li::marker {
+    font-size: 150%;
+}
+
+.screen {
+    background-color: #D0CDCD;
+    height: 70px;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
+.seat {
+    justify-content: space-evenly;
+    background-color: #444451;
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cancel {
+    border-radius: 20px;
+    width: 30%;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.purchase {
+    border-radius: 20px;
+    width: 30%;
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12;
+
+}

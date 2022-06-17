@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="/stylesheets/signup.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="/javascripts/signup.js"></script>
+    </head>
+    <div class="outerouterdiv">
+        <div class="outer">
+            <div class="upperdiv">
+                <h1 class="welcomeback">
+                Let's get set up<br>
+                </h1>
+            </div>
+            <div class="lowerdiv">
+                <form>
+                <label for="username">User name</label><br>
+                <input type="text" id="username" name="username" placeholder="Enter a user name"...><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter an email address"><br><br>
+                <label for="password">Password</label><br>
+                <input minlength="8" type="password" id="password" name="password" placeholder="Enter a password"...><br><br>
+                <label for="confirmpassword">Confirm password</label>
+                <input minlength="8" type="password" id="passwordconfirm" name="passwordconfirm" placeholder="Confirm your password"...>
+                <div class ="signin" >
+                     Already have account? <a href="./Sign.html">Sign In</a></p>
+                </div>
+                <div class="save">
+                    <button onclick="sign_up()" type="submit "class="signup">Sign up</button><br><br>
+                    <button onclick="go_back()" class="cancel">Cancel</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</html>

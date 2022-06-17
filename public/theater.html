@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Sign up</title>
+        <link rel="stylesheet" href="/stylesheets/theater.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="/javascripts/theater.js"></script>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="upperdiv">
+                <div class="movie">
+                    <label for="movie" id="movie">Select Movie </label>
+                    <select name="movie" id="movie">
+                        <option value="10">sponge bob</option>
+                        <option value="12">simpsons</option>
+                        <option value="8">hero</option>
+                        <option value="9">family guy</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <label for="date" id="date">Choose date </label>
+                    <input type="date" id="date"></select>
+                </div>
+                <button type="submit" onclick = "filterSeats()">Filter Seats</button>
+
+                <div class="searchbar">
+                </div>
+            </div>
+            <div class="availability">
+                <li class="available">Available</li>
+                <li class="selected">Selected</li>
+                <li class="occupied">Occupied</li>
+            </div>
+
+             <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="screen"></div><br><br><br>
+            <div class="button">
+                <button onclick="cancel()" type="submit "class="cancel">Cancel</button>
+                <button onclick="purchase()" type="submit "class="purchase">Purchase</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
