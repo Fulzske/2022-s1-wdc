@@ -69,38 +69,6 @@ router.post('/login', function(req, res, next) {
   });
 });
 
-// router.post('/purchase', function(req, res, next) {
-//   // console.log(req.body);
-//       req.pool.getConnection(function(err, connection) {
-//       if (err) {
-//           res.sendStatus(500);
-//           return;
-//       }
-//           if (search == 0){
-//               var query = `SELECT Movie.name, Reservations.date, Movie.price FROM Users
-//                               INNER JOIN Orders
-//                               ON Users.id = Orders.user
-//                               INNER JOIN Books
-//                               ON Books.b_id = Orders.book
-//                               WHERE Users.u_id = ? ;`;
-//               connection.query(query,[currentUser.u_id],function(err, rows, fields) {
-//                       connection.release(); // release connection
-//                       if (err) {
-//                           // console.log(err);
-//                           res.sendStatus(500);
-//                           return;
-//                       }
-//                       // console.log(rows);
-//                       res.json(rows);
-//               });
-
-//           }
-//   });
-// });
-
-
-
-
 module.exports = router;
 
 
