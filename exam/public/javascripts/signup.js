@@ -1,5 +1,48 @@
 var valid = check_valid(user)
 
+
+
+function check_valid(user) {
+    var valid = true;
+    var valid_email = true;
+
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (user.email.match(validRegex)) {
+
+        valid_email = true;
+
+    } else {
+        valid_email = false;
+        valid = false;
+    }
+    if (valid_email == false) {
+        alert("Email not valid!");
+    }
+
+    var valid_pass = true;
+
+    var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    if (user.psw.match(passw)) {
+
+        valid_pass = true;
+
+    } else {
+        valid_pass = false;
+        valid = false;
+    }
+    if (valid_email == false) {
+        alert("Please enter a password between 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter");
+    }
+
+    return valid;
+}
+
+
+
+
+
 function sign_up() {
     let user = {
         username: document.getElementById('username').value,
