@@ -4,6 +4,9 @@ function sign_up() {
         email: document.getElementById('email').value,
         password: document.getElementById('password').value,
     };
+
+    
+
     var http = new XMLHttpRequest();
 
     // Define function to run on response
