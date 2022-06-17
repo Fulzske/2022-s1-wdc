@@ -9,7 +9,7 @@ function sign_up() {
     const checkEmail = document.getElementById("email");
     const checkPassword = document.getElementById("password");
 
-    if (checkUsername.value && checkUsername.value.length > 0 && checkEmail.value && checkEmail.value.length > 0 && checkPassword.value && checkPassword.value.length > 0) {
+    if (checkUsername.value && checkUsername.value.length > 0 && checkEmail.value && checkEmail.value.length > 0 && checkPassword.value && checkPassword.value.length > 8) {
         var http = new XMLHttpRequest();
 
         // Define function to run on response
