@@ -14,10 +14,6 @@ function check_valid(user) {
     }
 }
 
-
-
-
-
 function sign_up() {
     let user = {
         username: document.getElementById('username').value,
