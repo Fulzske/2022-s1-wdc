@@ -32,7 +32,7 @@ router.post('/signup', function(req, res, next){
             res.sendStatus(500);
             return;
         }
-        var query = `INSERT INTO Users (username, email, password) VALUES (?,?, SHA2(?,224));`;
+        var query = `INSERT INTO users (username, email, password) VALUES (?,?, SHA2(?,224));`;
         connection.query(query, [req.body.username, req.body.email, req.body.password], function(err, rows, fields) {
             connection.release(); // release connection
             if(err){
@@ -57,9 +57,7 @@ router.post('/login', function(req, res, next) {
               res.sendStatus(500);
               return;
           }
-          //   console.log(rows);
           if (rows.length > 0){
-              // console.log(rows[0]);
               req.session.user = rows[0];
               currentUser = rows[0];
               res.json(rows[0]);
@@ -96,7 +94,6 @@ router.post('/purchase', function(req, res, next) {
               });
 
           }
-
   });
 });
 

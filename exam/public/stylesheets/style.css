@@ -1,8 +1,21 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12;
+
 }
 
-a {
-  color: #00B7FF;
+.outer {
+  clear: both;
+  top: 5vh;
+  text-align: center;
+  position: relative;
+  border-color: #9A9A9A;
+  height: 500px;
+  width: 350px;
+  flex-direction: column;
+  border: 1px solid #9A9A9A;
+  box-align: center;
+  margin: auto;
+  border-radius: 15px;
+  display: flex;
 }
